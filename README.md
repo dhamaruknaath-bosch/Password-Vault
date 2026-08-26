@@ -27,3 +27,6 @@ Data and app settings are stored in `%LOCALAPPDATA%\LocalVault\vault.db`.
 A random data-encryption key encrypts vault fields with AES-GCM. That key is wrapped separately by keys derived from the master password and PIN. The PIN is intentionally less resistant to offline guessing than a strong master password, so protect the PC and encrypted database backup. Major database changes require the master password.
 
 Existing version 1 databases use a different metadata layout. Preserve a backup before moving to version 2. For a clean test, rename `%LOCALAPPDATA%\LocalVault` before starting v2.
+
+## Note
+Use the windows batch file named as "Locker.bat" and create it's shortcut on desktop and change the icon to desired symbol. This would make it almost function as a windows executable program while running on python.
